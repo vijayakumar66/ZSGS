@@ -1,4 +1,4 @@
-package bitmanipulation;
+//https://leetcode.com/problems/subsets/
 
 import java.util.ArrayList;
 import java.util.Arrays;
