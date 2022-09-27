@@ -1,0 +1,65 @@
+package Assignments;
+
+import java.util.Scanner;
+
+public class MimickGame {
+	static int sum=0;
+	static char add='+';
+	char[] operator= {'+','-','/','*'};
+	
+
+	private static void addFunction(int[] numbers,int result) {
+		StringBuffer equ=new StringBuffer();
+		for(int i=0;i<numbers.length;i++)
+		{
+			sum+=numbers[i];
+			if(sum<=result)
+			{	int num=numbers[i];
+				equ.append(num);
+				if(sum!=result)
+					equ.append(add);
+			}
+		}
+		if(sum==result)
+		{
+			System.out.print("The Equvation is -->");
+			System.out.print(equ);
+		}
+	}
+	public static void combineFunction(int[] numbers,int result)
+	{
+		int i,j,k,l;
+		int f,s,t,fr;
+		char o1,o2,o3;
+		for(i=0;i<numbers.length;i++)
+		{
+			for(j=1;j<numbers.length;j++)
+			{
+				for(k=2;k<numbers.length;k++)
+				{					
+							f=numbers[i];
+							s=numbers[j];
+							t=numbers[k];
+
+				}
+			}
+		}
+	}
+	public static void main(String[] args) {
+		int result,i;
+		int[] numbers=new int[4];
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the Four Numbers");
+		for(i=0;i<numbers.length;i++)
+		{
+			numbers[i]=sc.nextInt();
+		}
+		System.out.println("Enter The Result Number");
+		result=sc.nextInt();
+		addFunction(numbers,result);
+		combineFunction(numbers,result);
+		
+		
+	}
+
+}
